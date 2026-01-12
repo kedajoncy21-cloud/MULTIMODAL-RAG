@@ -1,3 +1,12 @@
+MULTI MODAL RAG
+Multi Modal RAG (Retrieval-Augmented Generation) is an AI system that combines text, images,
+and documents with retrieval and large language models to generate accurate, context-aware
+responses.
+Project Objective
+• Combine multiple data modalities
+• Retrieve relevant context
+• Generate grounded AI responses
+
 def search_images(query_text, top_k=5):
     # Process the text query
     inputs = processor(text=[query_text], return_tensors="pt", padding=True).to(device)
@@ -29,5 +38,4 @@ def search_images(query_text, top_k=5):
     plt.tight_layout()
     plt.show()
 
-# Example usage
-search_images("Dog running on grass")
+
